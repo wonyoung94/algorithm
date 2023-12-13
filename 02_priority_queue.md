@@ -35,6 +35,10 @@
     - (하향식) 부모노드로 거슬러 올라가며, 부모보다 자신의 값이 더 작은 경우 위치를 교체  
         ~~상당히 가부장적인 자료구조네...~~
 
+![stack](./assets/heap.png)
+
+*이미지 출처 : https://yoongrammer.tistory.com/80*
+
 - 힙을 이용한 우선순위 큐 예시
 ```python
 import sys
