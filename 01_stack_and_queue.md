@@ -1,12 +1,15 @@
 # Stack
 ## 먼저 들어온 데이터가 나중에 나가는 형식 (FILO)
 - 입구와 출구가 동일한 형태 ex.박스쌓기
-![stack](./assets/)
 
 - DFS 알고리즘 외에도 다양한 알고리즘에서 사용됨.
 
 - 스택의 동작 : 삽입 + 삭제
 - `append`, `pop`은 시간복잡도가 상수시간 `O(1)`이다.
+
+![stack](./assets/stack.png)
+
+*이미지 출처 : https://yoongrammer.tistory.com/45*
 
 - 스택의 예시
 ```python
@@ -45,7 +48,6 @@ print(stack) # 최하단 원소부터 출력
 # Queue
 ## 먼저 들어온 데이터가 먼저 나가는 형식 (FIFO)
 - 입구와 출구가 모두 뚤려있는 형태 ex. 터널
-![queue](./assets/)
 
 - `list`를 이용해 큐를 구현할 수는 있지만 시간복잡도가 더 높아 비효율적으로 동작할 수 있어 라이브러리를 사용
 - `deque` 자료구조는 스택과 큐의 장점을 모두 합친 자료구조 
@@ -53,6 +55,10 @@ print(stack) # 최하단 원소부터 출력
     - `deque` 미사용시, `pop` 사용 후 데이터 정렬이 필요하므로, 시간복잡도가 `O(N)`만큼 늘어나므로 `deque`를 사용하는것을 권장.
 - `python` 에서 큐를 구현시 `append`, `popleft`를 관행적으로 사용
     - `append`가 오른쪽 삽입임에도 불구하고 사용
+
+![stack](./assets/queue.png)
+
+*이미지 출처 : https://yoongrammer.tistory.com/46*
 
 - 큐의 예시
 ```python
@@ -79,7 +85,7 @@ queue.append(7)
 queue.append(8)
 # queue = [8, 7, 6, 5, 4, 3, 2]
 queue.popleft()
-# queue = [8, 7, 6, 5, 4, 3]
+# queue = [7, 6, 5, 4, 3, 2]
 
 print(queue) # 먼저 들어온 순서대로 출력
 # 실행 결과 : deque([3, 4, 5, 6, 7, 8])
@@ -89,3 +95,11 @@ print(queue) # 최하단 원소부터 출력
 # 실행 결과 : deque([8, 7, 6, 5, 4, 3])
 ```
 - `C++`, `java`에서도 `queue`자료구조를 지원
+
+- 환형 큐(Circular Queue) : 선형 큐의 문제점을 보완한 것
+    - 선형 큐의 처음과 끝을 연결하여 만든 큐
+
+![stack](./assets/Circular_Queue.png)
+
+*이미지 출처 : https://yoongrammer.tistory.com/46*
+    
