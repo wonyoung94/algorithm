@@ -56,7 +56,7 @@ print(stack) # 최하단 원소부터 출력
 - `python` 에서 큐를 구현시 `append`, `popleft`를 관행적으로 사용
     - `append`가 오른쪽 삽입임에도 불구하고 사용
 
-![stack](./assets/queue.png)
+![queue](./assets/queue.png)
 
 *이미지 출처 : https://yoongrammer.tistory.com/46*
 
